@@ -759,7 +759,7 @@ align-items:center;
 .skill i{
     display:block;
     font-size:55px;
-    color:#fff;
+    color:#ffffff;
     margin-bottom:15px;
 }
 
@@ -767,7 +767,7 @@ align-items:center;
     display:block;
     font-size:22px;
     font-weight:600;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 /*======================================
