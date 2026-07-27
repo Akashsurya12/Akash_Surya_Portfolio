@@ -758,24 +758,15 @@ header{
     SKILL ICONS (OPTIONAL)
 ======================================*/
 
-.skill i{
-
-    display:block;
-
-    font-size:55px;
-
+.skill-icon{
+    width:55px;
+    height:55px;
     margin-bottom:15px;
-
-    color:var(--primary);
-
     transition:0.3s;
-
 }
 
-.skill:hover i{
-
+.skill:hover .skill-icon{
     transform:scale(1.15);
-
 }
 
 
