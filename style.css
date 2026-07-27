@@ -241,15 +241,13 @@ header{
 
     letter-spacing:2px;
 
-    background:linear-gradient(
-    90deg,
-    #38bdf8,
-    #8b5cf6);
+    background: linear-gradient(90deg,#38bdf8,#8b5cf6);
 
-    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-background-clip: text;
 
-    color:transparent;
-
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-links{
@@ -366,15 +364,16 @@ header{
 
 .hero-left h1 span{
 
-    background:linear-gradient(
-    90deg,
-    #38bdf8,
-    #8b5cf6);
+    background: linear-gradient(
+        90deg,
+        #38bdf8,
+        #8b5cf6);
 
-    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-background-clip: text;
 
-    color:transparent;
-
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-left h2{
