@@ -655,13 +655,7 @@ header{
 
 .skill{
 
-    position:relative;
-
     background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    backdrop-filter:blur(20px);
 
     border-radius:20px;
 
@@ -669,18 +663,10 @@ header{
 
     text-align:center;
 
-    font-size:20px;
+    border:1px solid rgba(255,255,255,.08);
 
-    font-weight:600;
-
-    color:white;
-
-    overflow:hidden;
-
-    transition:.45s;
-
-    cursor:pointer;
-
+    transition:.4s;
+    
 }
 
 .skill::before{
@@ -754,9 +740,9 @@ header{
 }
 
 .skill i{
-    font-size:55px;
-    color:#ffffff;
     display:block;
+    font-size:55px;
+    color:#fff;
     margin-bottom:15px;
 }
 
@@ -764,8 +750,8 @@ header{
     display:block;
     font-size:22px;
     font-weight:600;
+    color:white;
 }
-
 
 /*======================================
     SKILL ICONS (OPTIONAL)
