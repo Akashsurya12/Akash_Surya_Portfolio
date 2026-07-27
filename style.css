@@ -654,6 +654,10 @@ header{
 
 .skill{
 
+    position:relative;
+
+    overflow:hidden;
+
     background:rgba(255,255,255,.06);
 
     border-radius:20px;
@@ -666,6 +670,18 @@ header{
 
     transition:.4s;
     
+}
+
+.skill{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
 }
 
 .skill::before{
@@ -689,6 +705,8 @@ header{
     transition:.5s;
 
 }
+
+
 
 .skill:hover::before{
 
