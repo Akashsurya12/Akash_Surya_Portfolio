@@ -756,18 +756,25 @@ align-items:center;
 
 }
 
-.skill i{
-    display:block;
-    font-size:55px;
-    color:#ffffff;
-    margin-bottom:15px;
+.skill i {
+    display: block;
+    font-size: 55px;
+    color: #38BDF8;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
 }
+
+.skill:hover i {
+    color: #7DD3FC;
+    transform: scale(1.1);
+}
+
 
 .skill span{
     display:block;
     font-size:22px;
     font-weight:600;
-    color:rgb(255, 255, 255);
+    color:#F0F9FF;
 }
 
 /*======================================
