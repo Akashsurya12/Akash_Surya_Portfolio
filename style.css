@@ -808,6 +808,30 @@ align-items:center;
 
 }
 
+
+/* EDUCATION CARDS LAYOUT */
+
+.education-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.education-card {
+    width: 100%;
+}
+
+.education-card h3 {
+    color: #F0F9FF;
+}
+
+.education-card h4 {
+    color: #38BDF8;
+}
+
+
 .education-card{
 
     max-width:750px;
