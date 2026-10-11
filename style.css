@@ -798,187 +798,138 @@ align-items:center;
 
 }
 
+
 /*======================================
-    EDUCATION
+        EDUCATION SECTION
 ======================================*/
 
-#education{
-
-    padding:120px 0;
-
+#education {
+    padding: 120px 0;
 }
 
-
-.education-card{
-
-    max-width:750px;
-
-    margin:auto;
-
-    background:rgba(255,255,255,.06);
-
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:25px;
-
-    padding:45px;
-
-    position:relative;
-
-    overflow:hidden;
-
-    transition:.45s;
-
-}
-
-.education-card::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:180px;
-
-    height:180px;
-
-    border-radius:50%;
-
-    background:rgba(139,92,246,.25);
-
-    filter:blur(70px);
-
-    right:-60px;
-
-    top:-60px;
-
-}
-
-.education-card:hover{
-
-    transform:translateY(-10px);
-
-    border-color:rgba(56,189,248,.4);
-
-    box-shadow:
-
-    0 20px 50px rgba(56,189,248,.2);
-
-}
-
-.education-card h3{
-
-    font-size:30px;
-
-    margin-bottom:10px;
-
-    color:white;
-
-}
-
-.education-card h4{
-
-    color:var(--primary);
-
-    font-size:22px;
-
-    margin-bottom:15px;
-
-}
-
-.education-card p{
-
-    color:var(--text);
-
-    font-size:18px;
-
-    margin:8px 0;
-
-}
-
-
-/* Arrange education cards vertically */
 #education .container {
+    width: 90%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
-#education .education-card {
+.education-card {
     width: 100%;
     max-width: 850px;
-    margin: 0 auto 30px;
-
-    background: rgba(56, 189, 248, 0.06);
-    border: 1px solid rgba(56, 189, 248, 0.22);
-    border-radius: 20px;
-
+    margin: 0 auto 25px;
     padding: 35px 40px;
 
     position: relative;
     overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 25px;
 
     transition: transform 0.4s ease,
                 border-color 0.4s ease,
                 box-shadow 0.4s ease;
 }
 
-/* College and school names */
-#education .education-card h3 {
-    color: #F0F9FF;
-    font-size: 26px;
+/* Decorative timeline strip */
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+
+    background: linear-gradient(
+        var(--primary),
+        var(--secondary)
+    );
+}
+
+/* Education qualification */
+.education-card h3,
+.education-card h4,
+.education-card h5,
+.education-card h6 {
+    position: relative;
+    color: var(--primary);
+    line-height: 1.6;
     margin-bottom: 12px;
 }
 
-/* Course and qualification */
-#education .education-card h4 {
-    color: #38BDF8;
-    font-size: 20px;
-    margin-bottom: 15px;
+/* Main degree heading */
+.education-card h3 {
+    font-size: 24px;
+    color: #F0F9FF;
 }
 
-/* Other education details */
-#education .education-card p {
-    color: #CBD5E1;
+/* Course heading */
+.education-card h4 {
+    font-size: 20px;
+}
+
+/* Intermediate and SSC headings */
+.education-card h5,
+.education-card h6 {
+    font-size: 20px;
+}
+
+/* College and school names */
+.education-card strong {
+    color: #E2E8F0;
+    font-size: 17px;
+}
+
+/* Marks and academic years */
+.education-card p {
+    position: relative;
+    color: var(--text);
     font-size: 16px;
     line-height: 1.9;
-    margin: 6px 0;
+    margin: 5px 0;
 }
 
-/* Highlight school and college names */
-#education .education-card strong {
-    color: #E0F2FE;
-}
-
-/* Sky-blue hover effect */
-#education .education-card:hover {
+/* Hover effect */
+.education-card:hover {
     transform: translateY(-6px);
-    border-color: #38BDF8;
+    border-color: rgba(56, 189, 248, 0.6);
 
     box-shadow:
         0 12px 30px rgba(56, 189, 248, 0.15),
-        0 0 18px rgba(56, 189, 248, 0.08);
+        0 0 18px rgba(139, 92, 246, 0.10);
 }
 
-/* Responsive layout for mobile */
+/* Mobile layout */
 @media (max-width: 600px) {
+    #education {
+        padding: 80px 0;
+    }
 
-    #education .education-card {
+    .education-card {
         padding: 25px 22px;
+        margin-bottom: 20px;
     }
 
-    #education .education-card h3 {
-        font-size: 22px;
+    .education-card h3 {
+        font-size: 20px;
     }
 
-    #education .education-card h4 {
+    .education-card h4,
+    .education-card h5,
+    .education-card h6 {
         font-size: 17px;
     }
 
-    #education .education-card p {
+    .education-card strong {
+        font-size: 15px;
+    }
+
+    .education-card p {
         font-size: 14px;
     }
 }
-
 
 
 /*======================================
